@@ -1,5 +1,7 @@
 ## Project Plan: AI-Powered Conflict Resolution and Peacekeeping Assistant
 
+Notion Page: https://www.notion.so/HarmonyLens-The-AI-Peacemaker-5f105fb5bf0e4067b582d60fb3b66329
+
 ### Overview
 
 HarmonyLens is an advanced AI system dedicated to understanding and resolving international conflicts. This plan serves as a guide to teach you how to utilize various tools and technologies integral to the system.
