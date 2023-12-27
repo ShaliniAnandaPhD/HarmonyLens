@@ -1,7 +1,5 @@
 ## Project Plan: AI-Powered Conflict Resolution and Peacekeeping Assistant
 
-Notion Page: https://www.notion.so/HarmonyLens-The-AI-Peacemaker-5f105fb5bf0e4067b582d60fb3b66329
-
 ### Overview
 
 HarmonyLens is an advanced AI system dedicated to understanding and resolving international conflicts. This plan serves as a guide to teach you how to utilize various tools and technologies integral to the system.
@@ -15,15 +13,31 @@ To analyze global communications for insights into sentiments, tones, and lingui
 ### Why and How
 
 - **Why**: Understanding public sentiment and communication styles is crucial in conflict resolution.
-- **How**:
-    - **PyTorch**: A leading deep learning library, ideal for processing large text datasets. [Learn PyTorch](https://pytorch.org/tutorials/).
-    - **NLTK (Natural Language Toolkit)**: Essential for text processing tasks. [NLTK Beginner's Guide](https://www.nltk.org/book/).
-    - **HuggingFace Transformers**: Offers pre-trained models like BERT for context-rich text analysis. [Transformers Tutorial](https://huggingface.co/transformers/quicktour.html).
+
+**How**:
+
+1. **Function `gather_data_from_apis()`**:
+    - Use Social Media and News APIs to collect a diverse range of text data, including social media posts, news articles, and political speeches.
+    - Ensure data variety to capture a wide spectrum of public opinion and official communications.
+2. **Function `preprocess_text_data(data)` with NLTK**:
+    - Process the collected data to make it suitable for analysis. This involves cleaning, tokenizing, removing stopwords, and normalizing text.
+    - Prepare data for more sophisticated analysis by breaking down complex sentences into analyzable elements.
+3. **Function `perform_sentiment_analysis(data)` with HuggingFace Transformers**:
+    - Apply advanced NLP models, like BERT, to assess the sentiment of the processed text.
+    - Extract and quantify sentiments (positive, negative, neutral) from the data to gauge public mood and tone.
+4. **Function `analyze_linguistic_patterns(data)` with PyTorch**:
+    - Use deep learning techniques to identify and analyze linguistic patterns and anomalies.
+    - Detect underlying themes and communication styles that are prevalent in the dataset.
 
 ### Data Sources
 
 - **Social Media and News APIs**: Tap into diverse opinions and media portrayals. [Twitter API Tutorial](https://developer.twitter.com/en/docs/twitter-api).
 - **Political Transcripts and Documents**: Critical for understanding official stances. [Accessing Government Documents](https://www.usa.gov/government-works).
+
+*Challenges and solutions:
+12-25 - Shalini - Created modules* 
+
+*12-26 -* 
 
 ### 2. Cultural Sensitivity Module
 
@@ -35,9 +49,14 @@ To integrate cultural understanding in conflict analysis, recognizing the impact
 
 - **Why**: Cultural insights are key to proposing acceptable and respectful resolutions.
 - **How**:
-    - **Scikit-Learn**: For machine learning models that interpret cultural patterns. [Scikit-Learn Tutorial](https://scikit-learn.org/stable/tutorial/index.html).
-    - **MongoDB**: Manages diverse cultural datasets effectively. [MongoDB Basics](https://university.mongodb.com/courses/M001/about).
-    - **D3.js**: For interactive data visualizations. [Interactive Visualization with D3.js](https://observablehq.com/@d3/learn-d3).
+    1. **Function `collect_cultural_data()` using MongoDB**:
+        - Store and manage diverse cultural datasets, ensuring a comprehensive cultural representation in the analysis.
+    2. **Function `analyze_cultural_patterns(data)` with Scikit-Learn**:
+        - Utilize machine learning techniques to interpret cultural patterns and differences within the data.
+        - Identify cultural nuances that could influence conflict dynamics and resolution strategies.
+    3. **Function `visualize_cultural_insights(data)` with D3.js**:
+        - Create interactive visualizations to effectively communicate cultural findings and patterns.
+        - Facilitate a better understanding of cultural complexities through data visualization.
 
 ### Data Sources
 
@@ -54,8 +73,14 @@ To develop strategies for conflict resolution based on historical data and curre
 
 - **Why**: Historical data provides valuable lessons for effective resolutions.
 - **How**:
-    - **PyTorch**: To create models that learn from past conflict resolutions. [Deep Learning with PyTorch](https://pytorch.org/tutorials/).
-    - **PostgreSQL**: For robust management of historical data. [PostgreSQL Tutorial](https://www.postgresqltutorial.com/).
+    1. **Historical Data Analysis Function (`analyze_historical_data`)**:
+        - Inputs: Historical peace agreements, diplomatic records.
+        - Outputs: Strategies and insights for conflict resolution.
+        - Description: Utilizes PyTorch to analyze historical data, identifying successful strategies and patterns in past conflict resolutions.
+    2. **Data Management Function (`manage_historical_data`)**:
+        - Inputs: Historical datasets.
+        - Outputs: Organized and queryable historical data.
+        - Description: Employs PostgreSQL for robust data management, organizing and storing historical data for efficient retrieval and analysis.
 
 ### Data Sources
 
@@ -72,9 +97,20 @@ To simulate negotiation scenarios and evaluate the feasibility of proposed resol
 
 - **Why**: Simulations predict potential outcomes, aiding in strategy refinement.
 - **How**:
-    - **Mesa**: For complex negotiation and social interaction simulations. [Introduction to Mesa](https://mesa.readthedocs.io/en/stable/tutorials/intro_tutorial.html).
-    - **Matplotlib**: To visualize simulation outcomes. [Matplotlib Getting Started](https://matplotlib.org/stable/tutorials/introductory/pyplot.html).
+    1. **Simulation Function (`run_simulation`)**:
+        - Inputs: Conflict scenarios, proposed resolution strategies.
+        - Outputs: Predicted outcomes of negotiations.
+        - Description: Uses Mesa to simulate complex negotiation scenarios, testing and evaluating different resolution strategies.
+    2. **Visualization Function (`visualize_simulation_results`)**:
+        - Inputs: Simulation outcomes.
+        - Outputs: Visual representations of potential outcomes.
+        - Description: Applies Matplotlib to create visualizations of the simulation results, aiding in the interpretation and presentation of potential outcomes.
 
+---
+
+Through HarmonyLens, you'll learn to leverage these tools in the realm of AI and conflict resolution, gaining skills in data analysis, cultural sensitivity, machine learning, and simulation. This project is not just about building a system but also about understanding the complexities of global conflicts and how technology can aid in their resolution.
+
+---
 
 ### List of References
 
